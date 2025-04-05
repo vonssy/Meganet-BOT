@@ -249,7 +249,7 @@ class Meganet:
                 point = balance.get("pointsFarmToday", 0)
 
             self.print_message(address, proxy, Fore.WHITE, f"Earning Today {point} PTS")
-            await asyncio.sleep(10 * 60)
+            await asyncio.sleep(4 * 60 * 60)
 
     async def process_complete_tasks(self, address: str, user_id: str, use_proxy: bool):
         while True:
